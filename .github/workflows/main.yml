@@ -25,8 +25,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-        python -m pip install -e . # installs all dependancies normally
-        python -m pip install -e .[lint] # installs optional dependancy named lint 
+         python -m pip install -e . # installs all dependancies normally
+         python -m pip install -e .[lint] # installs optional dependancy named lint 
 
       - name: Lint code
-        run: ruff check --output=github .
+        run: ruff check --output-format=github .
